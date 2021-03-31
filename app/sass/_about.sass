@@ -1,0 +1,115 @@
+.about
+  padding: 0 20px
+  .container
+    display: flex
+    background-color: #FBFBFB
+    max-width: 1170px
+    padding: 30px 70px 30px 100px
+    margin-top: 120px
+    @media (max-width: 1024px)
+      padding: 30px 15px
+      margin-top: 60px
+    @media (max-width: 600px)
+      flex-direction: column-reverse
+      margin-top: 30px
+    .about__left
+      width: 57%
+      display: flex
+      margin-right: 30px
+      position: relative
+      justify-content: right
+      @media (max-width: 600px)
+        width: 100%
+      .about__left-images
+        position: absolute
+        left: 0
+        margin-right: 30px
+        max-width: 47.3%
+        height: 116%
+        display: flex
+        flex-direction: column
+        @media (max-width: 600px)
+          height: 100%
+        img
+          &:first-child
+            object-fit: cover
+            width: 100%
+            height: 60.9%
+          &:last-child
+            object-fit: cover
+            width: 100%
+            height: 32.1%
+            margin-top: 30px
+      .about__right-images
+        margin-top: auto
+        height: 92%
+        max-width: 47.3%
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+    .about__text
+      display: flex
+      flex-direction: column
+      width: 40%
+      @media (max-width: 600px)
+        width: 100%
+      @media (max-width: 600px)
+        margin-bottom: 20px
+      h2
+        font-family: TT Hoves, sans-serif
+        font-style: normal
+        font-weight: 300
+        font-size: 64px
+        line-height: 64px
+        color: #BDBDBD
+        white-space: nowrap
+        @media (max-width: 1024px)
+          font-size: 40px
+          line-height: 40px
+          white-space: normal
+        @media (max-width: 600px)
+          text-align: center
+      p
+        font-family: TT Hoves, sans-serif
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 25px
+        color: #000000
+        margin-top: 20px
+        max-width: 400px
+        @media (max-width: 1024px)
+          font-size: 14px
+          line-height: 21px
+        @media (max-width: 600px)
+          max-width: 100%
+      a
+        font-family: TT Hoves, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 12px
+        letter-spacing: 0.2em
+        text-transform: uppercase
+        color: #333333
+        background-color: #ffffff
+        margin-right: auto
+        padding: 30px 100px 29px 65px
+        position: relative
+        margin-top: 20px
+        @media (max-width: 1024px)
+          padding: 15px 50px 14.5px 32.5px
+        &:after
+          content: ''
+          position: absolute
+          background-image: url("../img/about/04.png")
+          width: 17.2px
+          height: 8px
+          background-repeat: no-repeat
+          background-size: contain
+          right: 67.8px
+          transform: translateY(-50%)
+          top: 50%
+          @media (max-width: 1024px)
+            right: 20px

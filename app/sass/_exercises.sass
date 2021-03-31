@@ -1,0 +1,77 @@
+.exercises
+  padding: 0 20px
+  .container
+    display: flex
+    flex-direction: column
+    margin-top: 150px
+    @media (max-width: 1024px)
+      margin-top: 75px
+    @media (max-width: 600px)
+      margin-top: 37px
+    h1
+      font-family: TT Hoves, sans-serif
+      font-style: normal
+      font-weight: 300
+      font-size: 64px
+      line-height: 64px
+      color: #BDBDBD
+      @media (max-width: 1024px)
+        text-align: center
+      @media (max-width: 600px)
+        font-size: 40px
+        line-height: 40px
+    .exercises__text
+      display: flex
+      flex-direction: column
+      margin-top: 60px
+      .exercises__row
+        display: flex
+        @media (max-width: 1024px)
+          flex-direction: column
+        .exercises__left
+          display: flex
+          width: 50%
+          @media (max-width: 1024px)
+            margin-bottom: 50px
+          p
+            max-width: 280px
+        .exercises__right
+          display: flex
+          width: 50%
+          p
+            max-width: 420px
+        .exercises__right, .exercises__left
+          @media (max-width: 1024px)
+            width: 100%
+            justify-content: center
+          @media (max-width: 600px)
+            flex-direction: column
+          h2
+            font-family: SF Pro Display, sans-serif
+            font-style: normal
+            font-weight: 900
+            font-size: 200px
+            line-height: 144px
+            display: flex
+            align-items: center
+            color: #F2F2F2
+            @media (max-width: 600px)
+              margin: 0 auto 20px auto
+              font-size: 100px
+              line-height: 72px
+          p
+            font-family: TT Hoves, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 22px
+            line-height: 36px
+            color: #333333
+            margin: auto 0 auto 30px
+            @media (max-width: 1024px)
+              max-width: 420px
+            @media (max-width: 600px)
+              text-align: center
+              max-width: 100%
+              margin: 0
+              font-size: 16px
+              line-height: 26px

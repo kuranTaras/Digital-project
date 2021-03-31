@@ -1,0 +1,84 @@
+.contacts
+  padding: 0 20px
+  .container
+    display: flex
+    max-width: 1440px
+    justify-content: right
+    @media (max-width: 600px)
+      flex-direction: column
+    .contacts__left
+      display: flex
+      flex-direction: column
+      width: 100%
+      max-width: 480px
+      margin-right: 35px
+      @media (max-width: 600px)
+        max-width: 100%
+        margin-bottom: 20px
+      .contacts__title
+        margin-top: 63px
+        @media (max-width: 1024px)
+          margin-top: 30px
+        @media (max-width: 600px)
+          margin-top: 15px
+        h1
+          font-family: TT Hoves, sans-serif
+          font-style: normal
+          font-weight: 300
+          font-size: 64px
+          line-height: 64px
+          color: #BDBDBD
+          @media (max-width: 1024px)
+            font-size: 40px
+            line-height: 40px
+          @media (max-width: 600px)
+            text-align: center
+          &:last-child
+            color: #333333
+            font-weight: bold
+      .contacts__location
+        margin: 34px 0 43px 0
+        @media (max-width: 600px)
+          margin: 17px 0 21px 0
+      h4
+        font-family: TT Hoves, sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 22px
+        color: #333333
+        @media (max-width: 600px)
+          text-align: center
+      p
+        font-family: TT Hoves, sans-serif
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 20px
+        color: #333333
+        @media (max-width: 600px)
+          text-align: center
+      .contacts-number
+        margin-bottom: 52px
+        @media (max-width: 600px)
+          margin-bottom: 25px
+      a
+        margin-top: 32px
+        padding: 30px 43px
+        font-family: TT Hoves, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 12px
+        letter-spacing: 0.2em
+        text-transform: uppercase
+        color: #FFFFFF
+        background-color: #333333
+        margin-right: auto
+        @media (max-width: 600px)
+          margin: 16px auto 0 auto
+    .contacts__right
+      max-width: 790px
+      width: 100%
+      @media (max-width: 600px)
+        height: 300px

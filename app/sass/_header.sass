@@ -1,0 +1,96 @@
+.header
+  padding: 0 20px
+  .container
+    display: flex
+    .header__main
+      width: 100%
+      max-width: 1035px
+      display: flex
+      justify-content: space-between
+      position: relative
+      @media (max-width: 1024px)
+        flex-direction: column
+      .header-logo
+        width: 70px
+        height: 43.7px
+        margin: 29.1px 0
+        @media (max-width: 1024px)
+          margin: 29.1px 0 0 0
+        img
+          width: 100%
+          height: 100%
+      .header__menu
+        display: flex
+        width: 100%
+        justify-content: space-between
+        max-width: 635px
+        transition-duration: 1s
+        @media (max-width: 1024px)
+          flex-direction: column
+          max-width: 100%
+          padding-bottom: 20px
+          max-height: 0px
+          overflow: hidden
+        a
+          font-family: TT Hoves, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 12px
+          line-height: 12px
+          letter-spacing: 0.2em
+          text-transform: uppercase
+          color: #333333
+          margin: auto 0
+          @media (max-width: 1024px)
+            text-align: center
+            margin: 20px 0
+            font-size: 18px
+            line-height: 18px
+        .header-active
+          position: relative
+          &:before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 1px
+            background-color: #000
+            transform: translateY(-3.9px)
+            left: 0
+            top: 0
+            @media (max-width: 1024px)
+              display: none
+          &:after
+            content: ''
+            position: absolute
+            width: 100%
+            height: 1px
+            background-color: #000
+            transform: translateY(3.9px)
+            left: 0
+            bottom: 0
+            @media (max-width: 1024px)
+              display: none
+      .header__burger
+        width: 50px
+        height: 40px
+        display: none
+        flex-direction: column
+        justify-content: space-between
+        margin: auto 0
+        cursor: pointer
+        position: absolute
+        right: 0
+        top: 29.1px
+        transition-duration: 1s
+        @media (max-width: 1024px)
+          display: flex
+        div
+          width: 100%
+          height: 4px
+          background-color: black
+      .header__burger-active
+        transform: rotateY(180deg)
+
+
+
+

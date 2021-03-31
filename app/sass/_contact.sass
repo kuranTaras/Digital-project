@@ -1,0 +1,124 @@
+.contact
+  padding: 0 20px
+  .container
+    display: flex
+    flex-direction: column
+    margin-top: 120px
+    @media (max-width: 1024px)
+      margin-top: 60px
+    @media (max-width: 600px)
+      margin-top: 30px
+    h1
+      font-family: TT Hoves, sans-serif
+      font-style: normal
+      font-weight: 300
+      font-size: 64px
+      line-height: 64px
+      color: #BDBDBD
+      @media (max-width: 600px)
+        text-align: center
+        font-size: 40px
+        line-height: 40px
+    .contact__row
+      display: flex
+      justify-content: space-between
+      margin-top: 22px
+      @media (max-width: 600px)
+        flex-direction: column-reverse
+      .contact__form
+        display: flex
+        flex-direction: column
+        width: 33.3%
+        @media (max-width: 1024px)
+          width: 50%
+        @media (max-width: 600px)
+          width: 100%
+          margin-top: 30px
+        input
+          &:not(:last-child)
+            margin-bottom: 10px
+          width: 100%
+          outline: none
+          border: none
+          background-color: #F3F3F3
+          padding: 15px 0 15px 21px
+          font-family: TT Hoves, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 17px
+          letter-spacing: 0.04em
+          color: #8D8D8D
+        textarea
+          border: none
+          background-color: #F3F3F3
+          font-family: TT Hoves, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 17px
+          letter-spacing: 0.04em
+          color: #8D8D8D
+          padding: 14px 21px 0 21px
+          height: 141px
+          outline: none
+          position: relative
+          resize: none
+        .error
+          border: 1px solid red
+      .contact__img
+        width: 64.1%
+        max-height: 370px
+        display: flex
+        @media (max-width: 1024px)
+          width: 50%
+        @media (max-width: 600px)
+          width: 100%
+        img
+          width: 100%
+          object-fit: cover
+          height: 100%
+    p
+      font-family: TT Hoves, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 17px
+      letter-spacing: 0.03em
+      color: #333333
+      margin-top: 22px
+      margin-left: 40px
+      max-width: 331px
+      @media (max-width: 600px)
+        margin-left: 0
+    button
+      border: none
+      cursor: pointer
+      font-family: TT Hoves, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 12px
+      letter-spacing: 0.2em
+      text-transform: uppercase
+      color: #FFFFFF
+      background-color: #333333
+      max-width: 222px
+      padding: 30px 84.8px 30px 47px
+      position: relative
+      margin-top: 21px
+      &:after
+        content: ''
+        position: absolute
+        right: 52.6px
+        width: 17.2px
+        height: 8px
+        background-image: url("../img/contact/02.png")
+        background-repeat: no-repeat
+        background-size: contain
+        transform: translateY(-50%)
+        top: 50%
+
+
+
+

@@ -1,0 +1,176 @@
+.projects
+  padding: 0 20px
+  .container
+    margin-top: 60px
+    display: flex
+    flex-direction: column
+    @media (max-width: 1024px)
+      margin-top: 30px
+    @media (max-width: 600px)
+      margin-top: 15px
+    .projects__text
+      margin-bottom: 60px
+      @media (max-width: 1024px)
+        margin-bottom: 30px
+      @media (max-width: 600px)
+        margin-bottom: 15px
+      h1
+        font-family: TT Hoves, sans-serif
+        font-style: normal
+        font-weight: 300
+        font-size: 64px
+        line-height: 64px
+        color: #BDBDBD
+        @media (max-width: 600px)
+          font-size: 40px
+          line-height: 40px
+        &:last-child
+          font-weight: bold
+          color: #333333
+    .projects__slider
+      display: flex
+      width: 100%
+      overflow: hidden
+      .projects__slides
+        position: relative
+        width: 100%
+        height: 100%
+        display: flex
+        .projects__slide
+          transition-duration: 0.6s
+          min-width: 100%
+          opacity: 0
+          .projects__row
+            &:not(:last-child)
+              margin-bottom: 60px
+              @media (max-width: 1024px)
+                margin-bottom: 30px
+            width: 100%
+            display: flex
+            justify-content: space-between
+            @media (max-width: 1024px)
+              flex-direction: column
+            .projects__left
+              display: flex
+              width: 57.2%
+              @media (max-width: 1024px)
+                width: 100%
+                height: 300px
+              img
+                width: 100%
+                height: 100%
+                object-fit: cover
+            .projects__right
+              width: 42.8%
+              padding: 30px
+              background-color: #FBFBFB
+              display: flex
+              flex-direction: column
+              @media (max-width: 1024px)
+                width: 100%
+              h2
+                font-family: TT Hoves, sans-serif
+                font-style: normal
+                font-weight: 300
+                font-size: 40px
+                line-height: 50px
+                color: #BDBDBD
+                word-break: break-all
+                @media (max-width: 1024px)
+                  font-size: 20px
+                  line-height: 28px
+                @media (max-width: 600px)
+                  text-align: center
+              p
+                margin-top: 20px
+                font-family: TT Hoves, sans-serif
+                font-style: normal
+                font-weight: 300
+                font-size: 16px
+                line-height: 25px
+                color: #000000
+                @media (max-width: 1024px)
+                  font-size: 14px
+                  line-height: 22px
+              a
+                font-family: TT Hoves, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 12px
+                letter-spacing: 0.2em
+                text-transform: uppercase
+                color: #333333
+                background-color: #FFFFFF
+                padding: 30px 88px 29px 52px
+                margin-top: 64px
+                margin-right: auto
+                position: relative
+                @media (max-width: 1024px)
+                  margin-top: 20px
+                @media (max-width: 600px)
+                  padding: 15px 44px 15px 26px
+                &:after
+                  content: ''
+                  position: absolute
+                  right: 55.8px
+                  transform: translateY(-50%)
+                  top: 50%
+                  width: 17.2px
+                  height: 8px
+                  background-image: url("../img/projects/04.png")
+                  background-size: contain
+                  background-repeat: no-repeat
+                  @media (max-width: 600px)
+                    right: 20px
+        .projects__slide-active
+          opacity: 1
+    .projects__navigation
+      margin-top: 70px
+      display: flex
+      align-items: center
+      @media (max-width: 1024px)
+        margin-top: 40px
+      @media (max-width: 600px)
+        margin-top: 20px
+      .projects__numbers
+        display: flex
+        width: 100%
+        max-width: 142px
+        justify-content: space-between
+        height: 31px
+        align-items: center
+        position: relative
+        margin-right: 26px
+        span
+          &:not(:nth-child(2))
+            font-family: TT Hoves, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 24px
+            line-height: 24px
+            color: #BDBDBD
+          &:nth-child(2)
+            height: 2px
+            width: 43.8px
+            background-color: #E0E0E0
+            transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0)
+      .projects__buttons
+        display: flex
+        div
+          &:hover
+            background-color: #F9F9F9
+          transition-duration: 0.5s
+          display: flex
+          cursor: pointer
+          border: 1px solid #F2F2F2
+          width: 53px
+          height: 53px
+          background-color: #ffffff
+          img
+            margin: auto
+            width: 17.2px
+            height: 8px
+            object-fit: contain
+        .projects-prev
+          margin-right: 23px
